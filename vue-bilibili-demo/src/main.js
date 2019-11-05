@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './dongtai.vue'
+import App from './views/dongtai.vue'
 
 Vue.config.productionTip = false
 

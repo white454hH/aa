@@ -4,7 +4,7 @@
 
 <script>
     export default {
-        name: "block2"
+        name: "cont"
     }
 </script>
 

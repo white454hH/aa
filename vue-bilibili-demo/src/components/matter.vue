@@ -3,7 +3,7 @@
 </template>
 
 <script>
-    import list from './content/list'
+    import list from './dongtai-content/list'
     export default {
         name: "matter",
         components: {
