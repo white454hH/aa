@@ -1,0 +1,208 @@
+body,ul,ol,dl,dd,p,h1,h2,h3,h4,h5,h6,input,textarea,hr,div,em,strong{
+    margin:0;
+    padding:0;
+}
+.wuda::after{
+    content:"";display:block;clear:both;height:0;overflow:hidden;visibility:hidden;
+}
+body{
+    font-family: "微软雅黑";
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: none;
+}
+html{
+    font-size: 26.67vw;
+}
+.pin{
+    width: 100%;
+    display: flex;
+    height: 0.4rem;
+    margin-top: 0.1rem;
+    justify-content: flex-start;
+}
+.pin h5{
+    font-size: 0.18rem;
+    line-height: 0.4rem;
+    width: 50%;
+}
+.pin div .img-1{
+    width: 25%;
+    margin-left: 0.1rem;
+}
+.img-2{
+    height: 50%;
+    margin: auto 0;
+}
+.pin div{
+    display: flex;
+    width: 50%;
+}
+.dingyue{
+    width: 100%;
+    display: flex;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    padding-left: 0.1rem;
+}
+.dingyue a{
+    font-size: 0.14rem;
+    color: #b8b9b8;
+}
+.dingyue div{
+    width: 20%;
+    display: flex;
+    text-align: center;
+    align-items:flex-end;
+}
+.dingyue img{
+    width: 70%;
+    margin-bottom: 0.05rem;
+}
+.cont{
+    width: 100%;
+    height: 0.1rem;
+    background-color: #f3f3f3;
+}
+.all{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.all .div-3{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    margin-top: 0.1rem;
+}
+.all .div-3 span{
+    font-size: 0.12rem;
+    width: 40%;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+.all .div-3 h4{
+    font-size: 0.16rem;
+    width: 40%;
+}
+.all .div-3 img{
+    height: 50%;
+}
+.all .con-1{
+    width: 100%;
+    font-size: 0.14rem;
+    flex-wrap: wrap;
+    display: flex;
+    height: 7.5rem;
+}
+.all .font{
+    width: 25%;
+    display: flex;
+    justify-content:center;
+    margin-top: 0.2rem;
+}
+.all .font a{
+    display: inline-block;
+    color: rgb(86,86,86);
+    text-align: center;
+}
+.all .font img{
+    width: 50%;
+}
+.renewal{
+    border-top: 0.1rem solid rgb(243,243,243);
+    margin-top: 0.1rem;
+    font-size: 0.14rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.75rem;
+    justify-content: center;
+}
+.biaotou{
+    width: 90%;
+    margin-top: 0.1rem;
+}
+.guichu{
+    margin-top: 0.05rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.guichu div{
+    width: 60%;
+}
+.guichu div span{
+    font-size: 0.12rem;
+    color: rgb(180,180,180);
+}
+.but{
+    color: rgb(226,160,183);
+    display: inline-block;
+    border: 0.01rem solid rgb(226,160,183);
+    border-radius: 0.05rem;
+    padding: 0.01rem 0.05rem ;
+}
+.video{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+
+}
+.video a{
+    margin-top: 0.1rem;
+    width: 49%;
+    background-color: white;
+    color: black;
+    font-size: 0.13rem;
+    border-radius: 5%;
+}
+.video a img{
+    width: 100%;
+}
+.day{
+    margin-top: 0.05rem;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.12rem;
+    color: rgb(180,180,180);
+}
+
+.channel{
+    width: 100%;
+    font-size: 0.14rem;
+    display: flex;
+    justify-content:space-around;
+    border-top: 0.02rem solid rgb(237,237,237);
+    z-index: 5;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    height: 0.55rem;
+}
+.channel a{
+    color: rgb(111,111,111);
+}
+.channel img{
+    width: 50%;
+}
+.channel div{
+    display: flex;
+    text-align: center;
+    align-items:center;
+}
+.head{
+    width: 100%;
+    height: 13rem;
+    overflow: hidden;
+}

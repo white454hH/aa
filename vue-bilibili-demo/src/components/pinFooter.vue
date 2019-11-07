@@ -1,5 +1,5 @@
 <template>
-    <div class="foter">
+    <div class="channel">
         <div>
             <a :href="'#/'"><img src="../assets/img/33.png" alt=""><br>首页</a>
         </div>
@@ -17,7 +17,7 @@
 
 <script>
     export default {
-        name: "my-footer"
+        name: "pinFooter"
     }
 </script>
 

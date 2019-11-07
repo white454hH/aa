@@ -1,0 +1,162 @@
+<template>
+    <div class="all">
+        <div class="div-3">
+            <h4>全部分区(33)</h4>
+            <span>收起分区 <img src="../../assets/img/42.png" alt=""></span>
+        </div>
+        <div class="con-1">
+            <div class="font" v-for="(node,index) in list" :key="index">
+                <a href="#"><img :src="node.pic" alt=""><br>{{node.name}}</a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        name: "pinClassify",
+        data(){
+            return{
+                activeNames: ['1'],
+                list:[
+                    {
+                        pic:require('@/assets/img/43.png'),
+                        name:'番剧'
+                    },
+                    {
+                        pic:require('@/assets/img/44.png'),
+                        name:'国创'
+                    },
+                    {
+                        pic:require('@/assets/img/45.png'),
+                        name:'放映厅'
+                    },
+                    {
+                        pic:require('@/assets/img/46.png'),
+                        name:'纪录片'
+                    },
+                    {
+                        pic:require('@/assets/img/47.png'),
+                        name:'漫画'
+                    },
+                    {
+                        pic:require('@/assets/img/48.png'),
+                        name:'专栏'
+                    },
+                    {
+                        pic:require('@/assets/img/49.png'),
+                        name:'直播'
+                    },
+                    {
+                        pic:require('@/assets/img/50.png'),
+                        name:'音频'
+                    },
+                    {
+                        pic:require('@/assets/img/51.png'),
+                        name:'动画'
+                    },
+                    {
+                        pic:require('@/assets/img/52.png'),
+                        name:'音乐'
+                    },
+                    {
+                        pic:require('@/assets/img/53.png'),
+                        name:'舞蹈'
+                    },
+                    {
+                        pic:require('@/assets/img/54.png'),
+                        name:'游戏'
+                    },
+                    {
+                        pic:require('@/assets/img/55.png'),
+                        name:'科技'
+                    },
+                    {
+                        pic:require('@/assets/img/56.png'),
+                        name:'数码'
+                    },
+                    {
+                        pic:require('@/assets/img/57.png'),
+                        name:'生活'
+                    },
+                    {
+                        pic:require('@/assets/img/58.png'),
+                        name:'VLOG'
+                    },
+                    {
+                        pic:require('@/assets/img/59.png'),
+                        name:'鬼畜'
+                    },
+                    {
+                        pic:require('@/assets/img/60.png'),
+                        name:'时尚'
+                    },
+                    {
+                        pic:require('@/assets/img/61.png'),
+                        name:'广告'
+                    },
+                    {
+                        pic:require('@/assets/img/62.png'),
+                        name:'娱乐'
+                    },
+                    {
+                        pic:require('@/assets/img/126.png'),
+                        name:'影视'
+                    },
+                    {
+                        pic:require('@/assets/img/127.png'),
+                        name:'电影'
+                    },
+                    {
+                        pic:require('@/assets/img/128.png'),
+                        name:'电视剧'
+                    },
+                    {
+                        pic:require('@/assets/img/129.png'),
+                        name:'小视频'
+                    },
+                    {
+                        pic:require('@/assets/img/130.png'),
+                        name:'相簿'
+                    },
+                    {
+                        pic:require('@/assets/img/131.png'),
+                        name:'会员购'
+                    },
+                    {
+                        pic:require('@/assets/img/132.png'),
+                        name:'话题中心'
+                    },
+                    {
+                        pic:require('@/assets/img/133.png'),
+                        name:'全区排行榜'
+                    },
+                    {
+                        pic:require('@/assets/img/134.png'),
+                        name:'活动中心'
+                    },
+                    {
+                        pic:require('@/assets/img/135.png'),
+                        name:'小黑屋'
+                    },
+                    {
+                        pic:require('@/assets/img/136.png'),
+                        name:'游戏中心'
+                    },
+                    {
+                        pic:require('@/assets/img/137.png'),
+                        name:'游戏赛事'
+                    },
+                    {
+                        pic:require('@/assets/img/138.png'),
+                        name:'音频'
+                    },
+                ]
+            }
+        }
+    }
+</script>
+
+<style scoped>
+
+</style>

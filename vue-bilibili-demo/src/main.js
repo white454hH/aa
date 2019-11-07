@@ -1,8 +1,14 @@
 import Vue from 'vue'
-import App from './views/dongtai.vue'
-
+import app from '../app.vue'
+import router from './router'
+import MinUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
+import { Popup } from 'mint-ui';
+Vue.component(Popup.name, Popup);
+Vue.use(MinUI)
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
+    router,
+    render: h => h(app),
 }).$mount('#app')

@@ -20,50 +20,50 @@ img{
 html{
     font-size: 26.67vw;
 }
-.box-1{
+.huiyuan{
     width: 100%;
     display: flex;
     height: 0.4rem;
     justify-content:space-between;
     margin-top: 0.1rem;
 }
-.box-1 h5{
+.huiyuan h5{
     font-size: 0.18rem;
     line-height: 0.4rem;
     margin-right: 0.5rem;
 }
-.div-2 .img-1{
+.huiyuan .div-2 .img-1{
     height: 0.25rem;
     margin: auto 0;
 }
-.div-1 .img-1{
-    height: 100%;
+.huiyuan .div-1 .img-1{
+    width: 40%;
 }
-.img-2{
+.huiyuan .img-2{
     height: 50%;
     margin: auto 0;
 }
-.box-1 div{
+.huiyuan div{
     display: flex;
 }
-.div-2{
+.huiyuan .div-2{
     justify-content:flex-end;
 }
-.div-2 img:first-child{
+.huiyuan .div-2 img:first-child{
     margin-right: 0.1rem;
 }
-.div-2 img{
+.huiyuan .div-2 img{
     padding-right: 0.2rem;
 }
-.div-1 .img-1{
+.huiyuan .div-1 .img-1{
     padding-left: 0.2rem;
 }
-.box-2{
+.inpu{
     display: flex;
     justify-content:center;
     margin-top: 0.2rem;
 }
-.box-2 input{
+.inpu input{
     width: 90%;
     height: 0.3rem;
     font-size: 0.15rem;
@@ -78,28 +78,28 @@ html{
     font-weight: 700;
     outline: none;
 }
-.box-3{
+.biaoqian{
     display: flex;
     flex-wrap: wrap;
 }
-.div-3{
+.biaoqian .div-3{
     font-size: 0.12rem;
     width: 25%;
     text-align: center;
     margin-top: 0.1rem;
 }
-.div-3 a{
+.biaoqian .div-3 a{
     display: inline-block;
     color: black;
 }
-.div-3 img{
+.biaoqian .div-3 img{
     width: 60%;
 }
-.box-4{
+.block{
     display: flex;
     justify-content:space-around;
 }
-.div-4{
+.block .div-4{
     width: 30%;
     text-align: center;
     display: flex;
@@ -107,35 +107,36 @@ html{
     border: 0.01rem solid rgb(228,228,228);
     border-radius: 0.05rem;
 }
-.div-4 div{
+.block .div-4 div{
     width: 70%;
     font-size: 0.12rem;
     margin-bottom: 0.1rem;
 }
-.div-4 h5{
+.block .div-4 h5{
     font-size: 0.14rem;
     margin-bottom: 0.05rem;
     margin-top: 0.05rem;
 }
-.div-4 img{
+.block .div-4 img{
     width: 25%;
     height: 55%;
     margin-top: 0.15rem;
     margin-bottom: 0.1rem;
     margin-left: 0.03rem;
 }
-.div-4 span{
+.block .div-4 span{
     color: rgb(176,176,176);
 }
-.box-5{
+.iamge{
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 1.0rem;
 }
-.box-5 img{
+.iamge img{
     width: 95%;
 }
-.box-6{
+._list{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -143,38 +144,38 @@ html{
     justify-content:space-around;
     margin-bottom: 0.6rem;
 }
-.box-6 ul{
+._list ul{
     font-size: 0.16rem;
     list-style: none;
     margin-left: -0.4rem;
     margin-bottom: 0.1rem;
 }
-.box-6 li{
+._list li{
     display: inline-block;
     margin-right: 0.4rem;
 }
-.box-6 li:first-child{
+._list li:first-child{
     font-size: 0.18rem;
     font-weight: 600;
     border-bottom: 0.05rem solid rgb(245,110,156);
     border-radius: 0.02rem;
 }
-.div-5{
+.shaonv{
     font-size: 0.14rem;
     width: 45%;
     border: 0.01rem solid #e67fa7;
     position: relative;
     border-radius: 2%;
 }
-.div-5 img{
+.shaonv img{
     width: 60%;
     margin:0 0.3rem;
 }
-.div-5 h5{
+.shaonv h5{
     text-align: center;
     font-size: 0.14rem;
 }
-._sp{
+._spp{
     display: inline-block;
     width: 0.4rem;
     height: 0.2rem;
@@ -185,44 +186,44 @@ html{
     color: #e67fa7;
     margin: 0.05rem 0 0 0.05rem;
 }
-.div-5 p{
+.shaonv p{
     margin-left: 0.05rem;
     color: #e67fa7;
     margin-top: 0.07rem;
 }
-.div-5 p span:first-child{
+.shaonv p span:first-child{
     font-size: 0.18rem;
     font-weight: 700;
 }
-._sp-2{
+._list ._sp-2{
     position: absolute;
     right: 0.1rem;
     margin-top: 0.04rem;
 }
-.div-6{
+.music{
     font-size: 0.14rem;
     width: 45%;
     border: 0.01rem solid #e67fa7;
     position: relative;
     border-radius: 2%;
 }
-.div-6 h5{
+.music h5{
     text-align: center;
     font-size: 0.14rem;
 }
-.div-6 img{
+.music img{
     width: 100%;
 }
 .xian{
     margin-left: 0.1rem;
     margin-top: 0.1rem;
 }
-._p{
+._list ._p{
     margin-left: 0.05rem;
     color: #e67fa7;
     margin-top: 0.15rem;
 }
-._p span:first-child{
+._list ._p span:first-child{
     font-size: 0.18rem;
     font-weight: 700;
 }
@@ -231,7 +232,7 @@ html{
     top: 70%;
     width: 20%;
 }
-.foter{
+.footer{
     width: 100%;
     font-size: 0.14rem;
     display: flex;
@@ -243,13 +244,13 @@ html{
     bottom: 0;
     height: 0.55rem;
 }
-.foter a{
+.footer a{
     color: rgb(111,111,111);
 }
-.foter img{
+.footer img{
     width: 50%;
 }
-.foter div{
+.footer div{
     display: flex;
     text-align: center;
     align-items:center;

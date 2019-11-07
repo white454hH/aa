@@ -15,7 +15,7 @@
     import huisquare from './huisquare'
     import huiimg from './huiimg'
     import huiul from './huiul'
-    import huifiexd from './huifiexd'
+    import huibox from './huifiexd'
     export default {
         name: "huilist",
         components:{
@@ -24,7 +24,7 @@
             huisquare,
             huiimg,
             huiul,
-            huifiexd
+            huibox
         }
     }
 </script>

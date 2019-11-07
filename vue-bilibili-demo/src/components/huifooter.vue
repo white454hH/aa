@@ -1,16 +1,16 @@
 <template>
-    <div class="foter">
+    <div class="footer">
         <div>
-            <a href="#"><img src="../assets/img/20.png" alt=""><br>首页</a>
+            <a :href="'#/'"><img src="../assets/img/20.png" alt=""><br>首页</a>
         </div>
         <div>
-            <a href="#"><img src="../assets/img/21.png" alt=""><br>频道</a>
+            <a :href="'#/pindao'"><img src="../assets/img/21.png" alt=""><br>频道</a>
         </div>
         <div>
-            <a href="#"><img src="../assets/img/22.png" alt=""><br>动态</a>
+            <a :href="'#/dongtai'"><img src="../assets/img/22.png" alt=""><br>动态</a>
         </div>
         <div>
-            <a href="#"><img src="../assets/img/23.png" alt=""><br>会员购</a>
+            <a :href="'#/huiyuan'"><img src="../assets/img/23.png" alt=""><br>会员购</a>
         </div>
     </div>
 </template>

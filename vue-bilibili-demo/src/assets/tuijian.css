@@ -20,254 +20,142 @@ img{
 html{
     font-size: 26.67vw;
 }
-.box-1{
+.tuijian{
     width: 100%;
     display: flex;
     height: 0.4rem;
     justify-content:space-between;
     margin-top: 0.1rem;
 }
-.box-1 h5{
+.tuijian h5{
     font-size: 0.18rem;
     line-height: 0.4rem;
     margin-right: 0.5rem;
 }
-.div-2 .img-1{
-    height: 0.25rem;
+.ios .img-1{
     margin: auto 0;
+    width: 15%;
+    height: 50%;
 }
-.div-1 .img-1{
-    width: 40%;
+.tou{
+    width: 20%;
 }
-.img-2{
+.tou .img-1{
+    width: 50%;
+}
+.tou .img-2{
     height: 50%;
     margin: auto 0;
 }
-.box-1 div{
+.tuijian div{
     display: flex;
 }
-.div-2{
+.ios{
     justify-content:flex-end;
+    width: 40%;
 }
-.div-2 img:first-child{
-    margin-right: 0.1rem;
+.ios img{
+    padding-right: 0.18rem;
 }
-.div-2 img{
-    padding-right: 0.2rem;
-}
-.div-1 .img-1{
+.tou .img-1{
     padding-left: 0.2rem;
 }
-.box-2{
-    display: flex;
-    height: 0.5rem;
-    font-size: 0.16rem;
-    color: rgb(110,110,110);
-    justify-content:space-around;
-    align-items:center;
-}
-.box-2 span{
-    height: 0.5rem;
-    line-height: 0.5rem;
-}
-._sp{
-    color: #d28aa2;
-    border-bottom: 0.02rem solid #e8799f;
-    margin-top: 0.02rem;
-}
-.box-3{
-    display: flex;
-    justify-content:center;
-    padding: 0.1rem 0;
-    margin-top: 0.02rem;
-    border-top: 0.01rem  solid #efefef;
-    border-bottom: 0.01rem  solid #efefef;
- }
-.box-3 input{
-    width: 80%;
-    height: 0.3rem;
-    font-size: 0.14rem;
+.tuijian input{
+    width: 30%;
+    height: 70%;
+    font-size: 0.12rem;
     background-repeat: no-repeat;
     background-image: url("img/4.png");
-    background-position: 0.2rem;
-    background-size:5%;
+    background-position: 0.1rem;
+    background-size:10%;
     border: 0;
     background-color: rgb(244,244,244);
     border-radius:0.2rem;
     font-weight: 700;
     outline: none;
-    padding-left: 0.5rem;
-
-}
-.box-3 input::-webkit-input-placeholder {
-     color:     #c3c7c8;
- }
-.box-4{
-    font-size: 0.14rem;
-    display: flex;
-    flex-wrap: wrap;
-}
-.box-4 img{
-    width: 3%;
-    height: 80%;
-}
-.div-3{
-    width: 100%;
-    display: flex;
-    justify-content:space-around;
-    align-items:center;
-    margin-top: 0.1rem;
-}
-.div-3 h5{
-    font-size: 0.15rem;
-    margin-left: 0.02rem;
-}
-.sp1{
-    color: #efefef;
-}
-.sp{
-    color: #989898;
-    font-size: 0.12rem;
-}
-.div-4{
-    display: flex;
-    justify-content:space-around;
-    width: 100%;
-    margin-top: 0.1rem;
-    margin-bottom: 0.1rem;
- }
-.div-4 a{
-    display: inline-block;
-    width: 45%;
-    text-align: center;
-    background-color: #f4f4f4;
-    height: 0.3rem;
-    line-height: 0.3rem;
-    color: #747474;
-}
-.box-5{
-    width: 100%;
-    background-color: #f5f5f5;
-    height: 0.15rem;
-}
-.box-6{
-    display: flex;
-    justify-content:space-around;
-    align-items:center;
-    margin-top: 0.2rem;
-}
-.div-5{
-    display: flex;
-    font-size: 0.14rem;
-    align-items:center;
-}
-._a{
-    display: inline-block;
-    width: 15%;
-    height: 100%;
-    margin-right: 0.1rem;
-}
-.div-5 img{
-    width: 100%;
-}
-.div-5 div a{
-    color: #ec95b2;
-    font-size: 0.16rem;
-}
-.div-5 div span{
-    color: #ced0cf;
-}
-.img-3{
-    width: 1.5%;
-    height: 20%;
-}
-.box-7{
-    width: 100%;
-    font-size: 0.16rem;
-    font-weight: 700;
-    margin-top: 0.1rem;
-    margin-bottom: 0.1rem;
-}
-.box-7 img{
-    width: 5%;
-    height: 20%;
-}
-.box-7 p{
-    margin-left: 0.3rem;
-    width: 90%;
-    display: flex;
-    align-items:center;
-}
-.box-8{
-    font-size: 0.14rem;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(248,248,248);
-}
-.con{
-    width: 100%;
-    margin-left: 0.3rem;
-    display: flex;
-    align-items:center;
-    margin-top: 0.1rem;
-    margin-bottom: 0.1rem;
-}
-._a-1{
-    width: 7%;
-    display: inline-block;
-    height: 100%;
-}
-.con img{
-    width: 100%;
-}
-.con div{
+    padding-left: 0.3rem;
+    margin-top: 0.05rem;
     margin-left: 0.1rem;
 }
-.con div a{
-    color: rgb(105,135,166);
+.tuijian input::-webkit-input-placeholder {
+    color:     #c3c7c8;
 }
-.con div span{
-    color: rgb(152,152,152);
-}
-.div-6{
-    width: 100%;
-    margin-bottom: 0.1rem;
-}
-.div-6 img{
-    margin-left: 0.3rem;
-    width: 85%;
-}
-.div-7{
-    width: 100%;
-    margin-bottom: 0.1rem;
-}
-.div-7 h5{
-    font-size: 0.12rem;
-    margin-left: 0.3rem;
- }
-.box-9{
-    width: 100%;
+.list{
+    font-size: 0.16rem;
     display: flex;
-    align-items:center;
-    justify-content:space-around;
-    padding: 0.1rem 0;
-    margin-bottom: 0.1rem;
-    background-color: white;
+    justify-content:space-between;
+    color: #aaa6a7;
+    margin-top: 0.1rem;
+    padding: 0 0.05rem;
 }
-.box-9 a{
-    font-size: 0.14rem;
+._li{
+    color: rgb(231,124,160);
+    padding-bottom: 0.05rem;
+    border-bottom: 0.05rem solid #f27897;
+    border-radius: 5%;
+    font-weight: 700;
+}
+.recommended{
     display: flex;
-    align-items:center;
-    color: rgb(121,121,121);
-}
-.box-9 img{
-    width: 30%;
-}
-.con-1{
+    flex-wrap: wrap;
     width: 100%;
-    height: 0.1rem;
+    background-color: rgb(244,244,244);
+    justify-content: center;
     margin-bottom: 0.55rem;
+}
+.advertising{
+    width: 95%;
+    display: inline-block;
+    box-sizing: border-box;
+    display: flex;
+}
+.advertising img{
+    padding-top: 0.15rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+.contains{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.module{
+    margin-top: 0.1rem;
+    width: 48%;
+    background-color: white;
+    color: black;
+    font-size: 0.14rem;
+    border-radius: 5%;
+}
+.module img{
+    width: 100%;
+}
+.module div img{
+    width: 3%;
+    height: 100%;
+}
+.module div{
+    display: flex;
+    width: 90%;
+    justify-content:space-between;
+    margin: 0 auto;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    font-size: 0.12rem;
+    color: #c6c2c3;
+}
+.module div span{
+    background: #fd9e59;
+    padding: 0 0.05rem;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.module p{
+    padding-left: 0.1rem;
+    margin-top: 0.05rem;
 }
 .foter{
     width: 100%;
@@ -446,17 +334,4 @@ html{
 }
 .border-5 li{
     width: 100%;
-}
-.bod{
-    width: 0.6rem;
-    font-size: 0.12rem;
-    position: absolute;
-    right: 0.1rem;
-}
-.bod ul{
-    border: 0.01rem solid black;
-}
-.bod li{
-    line-height: 0.3rem;
-    text-align: center;
 }

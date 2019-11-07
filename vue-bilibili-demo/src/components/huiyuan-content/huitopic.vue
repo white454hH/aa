@@ -1,5 +1,5 @@
 <template>
-    <div class="box-3">
+    <div class="biaoqian">
         <div class="div-3" v-for="(n,index) in list" :key="index">
             <a href="#"><img :src="n.pic" alt=""><br>{{n.name}}</a>
         </div>

@@ -1,5 +1,5 @@
 <template>
-    <div class="box-1" >
+    <div class="huiyuan" >
         <div class="div-1">
             <img src="../assets/img/0.png" alt="" class="img-2">
             <img src="../assets/img/1.png" alt="" class="img-1">

@@ -1,62 +1,79 @@
 <template>
     <div>
-        <div class="border">
-            <div class="border-1">
-                <div>
-                    <img src="../assets/img/1.png" alt="" class="img-4">
-                </div>
-                <div class="border-2">
-                    <img src="../assets/img/104.png" alt="">
-                    <img src="../assets/img/105.png" alt="">
-                </div>
-                <div>
-                    <div  class="wenzi">
-                        <h5>半城殇雪半城烟</h5>
-                        <a>Lv2</a>
-                        <span>正式会员</span>
-                    </div>
-                    <div class="bi">
-                        <span>B币:0.0</span>
-                        <span>硬币:45.0</span>
-                    </div>
-                </div>
+        <div class="tuijian" >
+            <div class="tou" is-link @click="showPopup" >
+                <img src="../assets/img/0.png" alt="" class="img-2">
+                <img src="../assets/img/1.png" alt="" class="img-1">
             </div>
-            <div class="border-3">
-                <div>
-                    <span>我的大会员</span>
-                    <a>了解更多权益</a>
-                    <p>开通大会员常看番剧国创</p>
-                </div>
-                <span class="sp2">></span>
-            </div>
-            <div class="border-4">
-                <a>0 <br><span>动态</span></a>
-                <a>3 <br><span>关注</span></a>
-                <a>0 <br><span>粉丝</span></a>
-            </div>
-
-            <bilibili-listli :data="item.matter" :index="index"  v-for="(item,index) in list" :key="index"></bilibili-listli>
-            <div class="_div">
-                <div class="border-6">
-                    <a><img src="../assets/img/114.png" alt=""><span>设置</span></a>
-                    <a><img src="../assets/img/115.png" alt=""><span>主题</span></a>
-                    <a><img src="../assets/img/116.png" alt=""><span>夜间</span></a>
-                </div>
+            <input type="text" placeholder="信号枪还能当···">
+            <div class="ios">
+                <img src="../assets/img/67.png" alt="" class="img-1">
+                <img src="../assets/img/68.png" alt="" class="img-1">
+                <img src="../assets/img/69.png" alt="" class="img-1">
             </div>
         </div>
+        <van-popup  v-model="show"
+                    position="left"
+                    :style="{ height: '100%',width:'80%' }">
+            <div>
+                <div class="border">
+                    <div class="border-1">
+                        <div class="border-2">
+                            <img src="../assets/img/104.png" alt="">
+                            <img src="../assets/img/105.png" alt="">
+                        </div>
+                        <div class="touxiang">
+                            <img src="../assets/img/1.png" alt="" class="img-4">
+                        </div>
+                        <div>
+                            <div  class="wenzi">
+                                <h5>半城殇雪半城烟</h5>
+                                <a>Lv2</a>
+                                <span>正式会员</span>
+                            </div>
+                            <div class="bi">
+                                <span>B币:0.0</span>
+                                <span>硬币:45.0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-3">
+                        <div>
+                            <span>我的大会员</span>
+                            <a>了解更多权益</a>
+                            <p>开通大会员常看番剧国创</p>
+                        </div>
+                        <span class="sp2">></span>
+                    </div>
+                    <div class="border-4">
+                        <a>0 <br><span>动态</span></a>
+                        <a>3 <br><span>关注</span></a>
+                        <a>0 <br><span>粉丝</span></a>
+                    </div>
 
+                    <bilibili-listli :data="item.matter" :index="index"  v-for="(item,index) in list" :key="index"></bilibili-listli>
+                    <div class="_div">
+                        <div class="border-6">
+                            <a><img src="../assets/img/114.png" alt=""><span>设置</span></a>
+                            <a><img src="../assets/img/115.png" alt=""><span>主题</span></a>
+                            <a><img src="../assets/img/116.png" alt=""><span>夜间</span></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </van-popup>
     </div>
 </template>
 
 <script>
-    import listli from './dongtai-content/listli'
+    import { Popup } from 'vant'
+    import lista from './dongtai-content/listli'
     export default {
-        name: "broadside",
-        components:{
-            'bilibili-listli':listli
-        },
-        data(){
-            return{
+        name: "tuiHeader",
+        data() {
+            return {
+                show: false,
                 list:[
                     {
                         matter:[
@@ -133,7 +150,16 @@
 
                 ]
             }
-        }
+        },
+        methods: {
+            showPopup() {
+                this.show = true;
+            }
+        },
+        components:{
+            [Popup.name]:Popup,
+            'bilibili-listli':lista
+        },
     }
 </script>
 

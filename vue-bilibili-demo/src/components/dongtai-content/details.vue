@@ -10,7 +10,14 @@
                     <span>{{data.time}}</span>
                 </div>
             </div>
-            <img src="../../assets/img/37.png" alt="" class="img-3">
+            <img src="../../assets/img/37.png" alt="" class="img-3" @click="show=!show">
+        </div>
+        <div class="bod" :class="show?'show':'hide'">
+            <ul>
+                <li>点击收藏</li>
+                <li>取消关注</li>
+                <li>点击举报</li>
+            </ul>
         </div>
         <div class="box-7">
             <p>已经更新了哦&nbsp;&nbsp;&nbsp;<span>{{data.span}}</span><img src="../../assets/img/27.png" alt=""><img src="../../assets/img/27.png" alt=""></p>
@@ -47,10 +54,20 @@
 <script>
     export default {
         name: "mydetails",
-        props:["data","index"]
+        props:["data","index"],
+        data(){
+            return{
+                show:false
+            }
+        }
     }
 </script>
 
 <style scoped>
-
+    .show{
+        display: block;
+    }
+    .hide{
+        display: none;
+    }
 </style>

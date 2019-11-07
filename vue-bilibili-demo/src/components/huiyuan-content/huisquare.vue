@@ -1,5 +1,5 @@
 <template>
-    <div class="box-4">
+    <div class="block">
         <div class="div-4" v-for="(i,li) in lite" :key="li">
             <div>
                 <h5>{{i.h5}}</h5>
