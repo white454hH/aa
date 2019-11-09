@@ -11,7 +11,7 @@
         </div>
     </div>
         <transition>
-                <div class="border" v-if="flag">
+                <div class="der" v-if="flag">
                     <div class="border-1">
                         <div class="border-2">
                             <img src="../assets/img/104.png" alt="">

@@ -1,0 +1,56 @@
+body,ul,ol,dl,dd,p,h1,h2,h3,h4,h5,h6,input,textarea,hr,div,em,strong{
+    margin:0;
+    padding:0;
+}
+.wuda::after{
+    content:"";display:block;clear:both;height:0;overflow:hidden;visibility:hidden;
+}
+body{
+    font-family: "微软雅黑";
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: none;
+}
+html{
+    font-size: 26.67vw;
+}
+.set{
+	font-size: 0.16rem;
+	display: flex;
+	padding: 0.2rem 0 0.1rem;
+	border-bottom: 0.02rem solid rgb(244,244,244);
+}
+.set span{
+	font-weight: 700;
+	font-size: 0.2rem;
+	margin-right: 0.2rem;
+	margin-left: 0.1rem;
+}
+.install{
+	font-size: 0.16rem;
+}
+.install ul{
+	border-top: 0.1rem solid rgb(234,234,234);
+}
+.install li{
+	display: flex;
+	justify-content: space-between;
+	padding: 0.1rem 0.1rem;
+	align-items: center;
+	border-bottom: 0.01rem solid rgb(232,232,232);
+}
+.exit{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.16rem;
+	padding: 0.1rem 0;
+	border-bottom: 0.1rem solid rgb(234,234,234);
+	border-top: 0.1rem solid rgb(234,234,234);
+}

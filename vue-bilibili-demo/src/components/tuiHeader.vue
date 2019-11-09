@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div class="tuijian" @click="flag = !flag">
-            <div class="tou"  >
+        <div class="tuijian" >
+            <div class="tou" is-link @click="showPopup" >
                 <img src="../assets/img/0.png" alt="" class="img-2">
                 <img src="../assets/img/1.png" alt="" class="img-1">
             </div>
@@ -12,8 +12,12 @@
                 <img src="../assets/img/69.png" alt="" class="img-1">
             </div>
         </div>
-        <transition>
-                <div class="border" v-if="flag">
+        <van-popup
+                v-model="show"
+                position="left"
+                :style="{ height: '100%',width:'80%' }"
+        >
+        <div class="border">
                     <div class="border-1">
                         <div class="border-2">
                             <img src="../assets/img/104.png" alt="">
@@ -51,25 +55,25 @@
                     <bilibili-listli :data="item.matter" :index="index"  v-for="(item,index) in list" :key="index"></bilibili-listli>
                     <div class="_div">
                         <div class="border-6">
-                            <a><img src="../assets/img/114.png" alt=""><span>设置</span></a>
+                            <a :href="'#/shezhi'"><img src="../assets/img/114.png" alt=""><span>设置</span></a>
                             <a><img src="../assets/img/115.png" alt=""><span>主题</span></a>
                             <a><img src="../assets/img/116.png" alt=""><span>夜间</span></a>
                         </div>
                     </div>
                 </div>
 
-                </transition>
+        </van-popup>
     </div>
 </template>
 
 <script>
-
+    import { Popup } from 'vant';
     import lista from './dongtai-content/listli'
     export default {
         name: "tuiHeader",
         data() {
             return {
-                flag:false,
+                show: false,
                 list:[
                     {
                         matter:[
@@ -147,33 +151,18 @@
                 ]
             }
         },
+        methods: {
+            showPopup() {
+                this.show = true;
+            }
+        },
         components:{
+            [Popup.name]:Popup,
             'bilibili-listli':lista
         },
     }
 </script>
 
 <style scoped>
-    .v-enter{
-        transform: translate3d(-335px,0,0)
-    }
-    .v-enter-to{
-        transform:translate3d(0,0,0)
 
-    }
-    .v-enter-active{
-        transition: all 2s ease;
-    }
-    .v-leave{
-        opacity: 1;
-
-    }
-    .v-leave-to{
-        transform:translate3d(-335px,0,0)
-
-    }
-    .v-leave-active{
-        transition: all 2s ease;
-
-    }
 </style>
