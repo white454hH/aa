@@ -2,7 +2,7 @@
     <div class="recommended">
         <tuiSlideshow></tuiSlideshow>
         <tuiCycle></tuiCycle>
-        </div>
+    </div>
 </template>
 
 <script>

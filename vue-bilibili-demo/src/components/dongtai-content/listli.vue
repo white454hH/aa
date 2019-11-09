@@ -1,7 +1,7 @@
 <template>
     <div class="border-5">
     <ul>
-    <bilibili-item :data="matter" :pid="pid" :index="index" v-for="(matter,pid) in data" :key="pid"></bilibili-item>
+    <bilibili-item :data="matter"  :index="index" v-for="(matter,pid) in data" :key="pid"></bilibili-item>
     </ul>
     </div>
 </template>

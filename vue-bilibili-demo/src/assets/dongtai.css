@@ -323,10 +323,10 @@ html{
     height: 90%;
 }
 .border{
-    width: 100%;
+    /*position: fixed;*/
+    /*top: 0;*/
+    width: 80%;
     background-color:white;
-    position: absolute;
-    top: 0;
     z-index: 100;
 }
 .wenzi{

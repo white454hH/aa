@@ -41,7 +41,9 @@ html{
     width: 20%;
 }
 .tou .img-1{
-    width: 50%;
+    width: 40%;
+    height: 100%;
+    padding-left: 0.2rem;
 }
 .tou .img-2{
     height: 50%;
@@ -56,9 +58,6 @@ html{
 }
 .ios img{
     padding-right: 0.18rem;
-}
-.tou .img-1{
-    padding-left: 0.2rem;
 }
 .tuijian input{
     width: 30%;
@@ -211,10 +210,10 @@ html{
     height: 90%;
 }
 .border{
-    width: 100%;
-    background-color:white;
     position: absolute;
     top: 0;
+    width: 80%;
+    background-color:white;
     z-index: 100;
 }
 .wenzi{

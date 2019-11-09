@@ -1,7 +1,7 @@
 <template>
     <div>
-        <div class="tuijian" >
-            <div class="tou" is-link @click="showPopup" >
+        <div class="tuijian" @click="flag = !flag">
+            <div class="tou"  >
                 <img src="../assets/img/0.png" alt="" class="img-2">
                 <img src="../assets/img/1.png" alt="" class="img-1">
             </div>
@@ -12,11 +12,8 @@
                 <img src="../assets/img/69.png" alt="" class="img-1">
             </div>
         </div>
-        <van-popup  v-model="show"
-                    position="left"
-                    :style="{ height: '100%',width:'80%' }">
-            <div>
-                <div class="border">
+        <transition>
+                <div class="border" v-if="flag">
                     <div class="border-1">
                         <div class="border-2">
                             <img src="../assets/img/104.png" alt="">
@@ -61,19 +58,18 @@
                     </div>
                 </div>
 
-            </div>
-        </van-popup>
+                </transition>
     </div>
 </template>
 
 <script>
-    import { Popup } from 'vant'
+
     import lista from './dongtai-content/listli'
     export default {
         name: "tuiHeader",
         data() {
             return {
-                show: false,
+                flag:false,
                 list:[
                     {
                         matter:[
@@ -151,18 +147,33 @@
                 ]
             }
         },
-        methods: {
-            showPopup() {
-                this.show = true;
-            }
-        },
         components:{
-            [Popup.name]:Popup,
             'bilibili-listli':lista
         },
     }
 </script>
 
 <style scoped>
+    .v-enter{
+        transform: translate3d(-335px,0,0)
+    }
+    .v-enter-to{
+        transform:translate3d(0,0,0)
 
+    }
+    .v-enter-active{
+        transition: all 2s ease;
+    }
+    .v-leave{
+        opacity: 1;
+
+    }
+    .v-leave-to{
+        transform:translate3d(-335px,0,0)
+
+    }
+    .v-leave-active{
+        transition: all 2s ease;
+
+    }
 </style>

@@ -5,7 +5,7 @@
 <script>
     export default {
         name: "item",
-        props:["data","pid","index"]
+        props:["data","index"]
     }
 </script>
 

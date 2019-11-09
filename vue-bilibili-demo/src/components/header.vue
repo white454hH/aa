@@ -1,7 +1,7 @@
 <template>
     <div>
-    <div class="box-1">
-        <div class="div-1" is-link @click="showPopup" >
+    <div class="box-1"  @click="flag = !flag">
+        <div class="div-1">
             <img src="../assets/img/0.png" alt="" class="img-2">
             <img src="../assets/img/1.png" alt="" class="img-1">
         </div>
@@ -10,11 +10,8 @@
             <img src="../assets/img/24.png" alt="" class="img-1">
         </div>
     </div>
-        <van-popup  v-model="show"
-                    position="left"
-                    :style="{ height: '100%',width:'80%' }">
-            <div>
-                <div class="border">
+        <transition>
+                <div class="border" v-if="flag">
                     <div class="border-1">
                         <div class="border-2">
                             <img src="../assets/img/104.png" alt="">
@@ -59,19 +56,18 @@
                     </div>
                 </div>
 
-            </div>
-        </van-popup>
+        </transition>
+
     </div>
 </template>
 
 <script>
-    import { Popup } from 'vant'
     import listli from './dongtai-content/listli'
     export default {
         name: "my-header",
         data() {
             return {
-                show: false,
+                flag:false,
                 list:[
                     {
                         matter:[
@@ -149,13 +145,7 @@
                 ]
             }
         },
-        methods: {
-            showPopup() {
-                this.show = true;
-            }
-        },
         components:{
-            [Popup.name]:Popup,
             'bilibili-listli':listli
         },
 
@@ -165,5 +155,26 @@
 </script>
 
 <style scoped>
+    .v-enter{
+        transform: translate3d(-335px,0,0)
+    }
+    .v-enter-to{
+        transform:translate3d(0,0,0)
 
+    }
+    .v-enter-active{
+        transition: all 2s ease;
+    }
+    .v-leave{
+        opacity: 1;
+
+    }
+    .v-leave-to{
+        transform:translate3d(-335px,0,0)
+
+    }
+    .v-leave-active{
+        transition: all 2s ease;
+
+    }
 </style>
