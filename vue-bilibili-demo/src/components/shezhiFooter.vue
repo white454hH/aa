@@ -1,6 +1,6 @@
 <template>
-    <div class="exit">
-        <span @click="Dialog">退出登录</span>
+    <div class="exit" @click="Dialog">
+        <span>退出登录</span>
     </div>
 
 </template>

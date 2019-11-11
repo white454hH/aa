@@ -6,6 +6,7 @@ import pindao from "../views/pindao"
 import tuijian from "../views/tuijian"
 import yingshi from "../views/yingshi"
 import shezhi from "../views/shezhi"
+import zhibo from "../views/zhibo"
 Vue.use(VueRouter)
 
 let router = new VueRouter({
@@ -18,6 +19,7 @@ let router = new VueRouter({
         {path:"/pindao",component:pindao},
         {path:"/yingshi",component:yingshi},
         {path:"/shezhi",component:shezhi},
+        {path:"/zhibo",component:zhibo},
     ]
 })
 

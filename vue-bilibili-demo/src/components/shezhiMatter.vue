@@ -5,7 +5,7 @@
 </template>
 
 <script>
-    import shezhiUl from './shezhiUl'
+    import shezhiUl from './shezhi-content/shezhiUl'
     export default {
         name: "shezhiMatter",
         components:{
